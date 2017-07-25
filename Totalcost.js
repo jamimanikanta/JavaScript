@@ -1,4 +1,4 @@
-function rentalCarCost(days) {
+function rentalCarCost(days){
   var total;
   if(days >= 7){
 total=days*40-50;
