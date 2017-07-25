@@ -1,13 +1,13 @@
-function RentalCarCost(days){
+function rentalCarCost(d){
   var total;
-  if(days >= 7){
-total=days*40-50;
+  if(d >= 7){
+total=d*40-50;
 }else
-if(days < 7 && days>=3){
-total=days*40-20;
+if(d < 7 && d>=3){
+total=d*40-20;
 }
 else{
-total=days*40
+total=d*40
 }
 return total;
 }
