@@ -1,13 +1,5 @@
-function rentalCarCost(d){
-  var total;
-  if(d >= 7){
-total=d*40-50;
-}else
-if(d < 7 && d>=3){
-total=d*40-20;
-}
-else{
-total=d*40
-}
-return total;
+function rentalCarCost(d) {
+    var total, amount;
+    amount = d * 40;
+    return total = (d >= 7) ? amount - 50 : (d < 7 && d >= 3) ? amount - 20 : amount;
 }
