@@ -1,4 +1,12 @@
-function basicOp(operation, value1, value2){
-   var result = value1 + operation + value2;
-    return eval(result);
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+': return value1 + value2;
+            break;
+        case '-': return value1 - value2;
+            break;
+        case '*': return value1 * value2;
+            break;
+        case '/': return value1 / value2;
+            break;
+    }
 }
