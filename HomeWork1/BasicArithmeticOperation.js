@@ -1,12 +1,15 @@
 function basicOp(operation, value1, value2) {
+    var result;
     switch (operation) {
-        case '+': return value1 + value2;
+        case '+': result= value1 + value2;
             break;
-        case '-': return value1 - value2;
+        case '-': result=value1 - value2;
             break;
-        case '*': return value1 * value2;
+        case '*': result=value1 * value2;
             break;
-        case '/': return value1 / value2;
+        case '/': result=value1 / value2;
             break;
+        default: result="please provide proper inputs"
     }
+    return result;
 }
