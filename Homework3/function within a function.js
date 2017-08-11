@@ -2,7 +2,7 @@ function always (n) {
  
  var myfun=function(){
  
-     return n
+     return n;
  }
 
 return myfun;
