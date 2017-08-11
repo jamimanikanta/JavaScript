@@ -1,87 +1,23 @@
-function myexpression(number, myfun) {
-    if (myfun === undefined) {
-        return number;
+function expression(n) {
+    var f = function () {
+        return arguments.length === 0 ? n : arguments[0](n);
     }
-    return myfun(number);
-}
+    return f;
+};
 
-function zero(myfun) {
+zero = expression(0);
+one = expression(1);
+two = expression(2);
+three = expression(3);
+four = expression(4);
+five = expression(5);
+six = expression(6);
+seven = expression(7);
+eight = expression(8);
+nine = expression(9);
 
-    return myexpression(0, myfun);
 
-}
-function one(myfun) {
-
-    return myexpression(1, myfun);
-
-}
-
-function two(myfun) {
-
-    return myexpression(2, myfun);
-}
-function three(myfun) {
-
-    return myexpression(3, myfun);
-
-}
-function four(myfun) {
-
-    return myexpression(4, myfun);
-
-}
-function five(myfun) {
-
-    return myexpression(5, myfun);
-
-}
-function six(myfun) {
-
-    return myexpression(6, myfun);
-
-}
-function seven(myfun) {
-
-    return myexpression(7, myfun);
-
-}
-function eight(myfun) {
-
-    return myexpression(8, myfun);
-
-}
-function nine(myfun) {
-
-    return myexpression(9, myfun);
-
-}
-
-function plus(right) {
-
-    return function (left) {
-
-        return left + right;
-    }
-}
-function minus(right) {
-
-    return function (left) {
-
-        return left - right;
-    }
-}
-function times(right) {
-
-    return function (left) {
-
-        return left * right;
-    }
-}
-function dividedBy(right) {
-
-    return function (left) {
-
-        return left / right;
-    }
-}
-
+function plus(n) { return function (m) { return m + n; }; }
+function minus(n) { return function (m) { return m - n; }; }
+function times(n) { return function (m) { return m * n; }; }
+function dividedBy(n) { return function (m) { return m / n; }; }
