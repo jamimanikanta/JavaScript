@@ -1,0 +1,23 @@
+<style>
+        #txtsearch {
+            width: 250px;
+            height: 25px;
+        }
+
+        #btnsearch {
+            width: 100px;
+            height: 30px;
+        }
+
+            #btnsearch:hover {
+                background-color: red
+            }
+
+        #outputscreen {
+            background-color: yellow;
+        }
+
+       
+
+
+    </style>
