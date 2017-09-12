@@ -1,19 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Youtube.js"></script>
+    <link href="youtube.css" rel="stylesheet" />
+</head>
 <body>
     <div>
-        <label>Youtube</label>
-        <input type="text" id="txtsearch" placeholder="Text some thing">
-        <button id="btnsearch" onclick="Mysearching()">
-            Search
-        </button>
+        <div class="borderdiv">
+            <div class="maindiv">
+                <label >Youtube</label>
+                <input type="text" id="txtsearch" placeholder="Text some thing">
+                <button id="btnsearch" onclick="searching()">
+                    Search
+                </button>
+            </div>
+        </div>
         <br>
         <br>
     </div>
-
     <table id="tbl">
         <tr>
             <td>
                 <div id="pagination">
-
                 </div>
                 <div id="outputscreen">
 
@@ -22,3 +31,4 @@
         </tr>
     </table>
 </body>
+</html>
