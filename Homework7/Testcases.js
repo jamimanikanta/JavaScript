@@ -24,3 +24,15 @@ expect(finalresult.length).toEqual(25);
 });
 });
 
+AddPromising(searchtext)
+
+
+describe("Test to get addpromising",function(){
+it("Test passed",function(){
+  
+var Res=AddPromising(searchtext)
+var res=JSON.parse(Res.status);
+ var finalresult=getViewCount(res) 
+expect(( typeof finalresult).toString()).toEqual("Object");
+});
+});
