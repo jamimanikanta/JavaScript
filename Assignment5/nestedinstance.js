@@ -1,12 +1,5 @@
-Object.prototype.hash=function(str){
-var myobj=obj;
-str.split(".").forEach(function(v){
-try{
-myobj=myobj[v];
-}
-catch(e) { 
-      myobj = undefined;
-    }
-});
-return myobj;
-}
+Object.prototype.hash = function(string) {
+  return string.split('.').reduce(function(p,n) {
+    return p && p[n];
+  }, this);
+};
